@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Myapp</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <div style="height: 100%; position: relative; width: 100%; background-color: #d3d3d3; z-index: 1;" class="cotainer">
+      
+      <button style="position:relative; left: 200px; top: 30px; width: 6cm; background-color: #535353; ">  Logo</button>
+
+<div class="topnav" id="myTopnav" style=
+
+   "
+    background-color: #d3d3d3;
+   background-repeat: repeat;
+    overflow: hidden;
+  position: relative; left: 900px;
+  padding: 0;
+  margin: 0%;
+  width: 100%;
+  z-index: 2;
+  ">
+    <nav style="background-color: #333; padding-top: 10px; padding-bottom: 10px;   font: 1em sans-serif;;">
+      <a href="homepage.html" style="color: #fff; text-decoration:dashed;  margin-right: 10px;">Home</a>
+      <a href="Products.html" style="color: #fff; text-decoration: none; margin-right: 10px;">Products</a>
+      <a href="homepage.html" style="color: #fff; text-decoration: none; margin-right: 10px;">Log out</a>
+    </nav>
+    
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+  </div>
+ 
+    <div>
+        <button style="position: relative; top:80px ; left: 640px; width: 3cm;"><a href=""></a><i class="fa fa-plus" aria-hidden="true"></i>Add</button>
+        <table style="position: relative; top: 100px; left: 450px;"  >
+            <tr ng-repeat="x in names">
+              <td ng-if="$odd" style="background-color:#f1f1f1">Products</td>
+              <td ng-if="$even">Category</td>
+              <td ng-if="$odd" style="background-color:#f1f1f1">Price</td>
+              <td ng-if="$even">Data</td>
+              <td ng-if="$odd" style="background-color:#f1f1f1">Action</td>
+            </tr>
+            <tr ng-repeat="y in names">
+                <td ng-if="$odd" style="background-color:#f1f1f1">Apple</td>
+                <td ng-if="$even">Fruits</td>
+                <td ng-if="$odd" style="background-color:#f1f1f1">120.00$</td>
+                <td ng-if="$even">01.01.01</td>
+                <td ng-if="$odd" style="background-color:#f1f1f1">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr ng-repeat="y in names">
+                <td ng-if="$odd" style="background-color:#f1f1f1">Iphone</td>
+                <td ng-if="$even">Electronics</td>
+                <td ng-if="$odd" style="background-color:#f1f1f1">800.00$</td>
+                <td ng-if="$even">01.01.01</td>
+                <td ng-if="$odd" style="background-color:#f1f1f1">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </td>
+              </tr>
+          </table
+    </div>
+</html>

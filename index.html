@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Myapp</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body class="mat-typography">
+  <div class="container" style="display: flex; height: 100%;">
+    <div class="imazhi" style="flex: 1;">
+      <img src="imgs/wp6124225.webp" alt="" style="height: 100%; width: 50%;">
+    </div>
+    <div class="forma" style="color: #5A5A5A; background-repeat: repeat; background-color: #d3d3d3; flex: 1; position: relative; top: 190px; height: 100%;">
+      <h3 style="position: relative; left: 200px;">User Form</h3>
+      <form name="myForm">
+        <input style="border-color: #5A5A5A; position:relative; left: 20px;" name="myInput" ng-model="myInput" type="email" placeholder="Email" required class="email-input">
+        <span style="color: red;" ng-show="myForm.myInput.$touched && myForm.myInput.$invalid"></span>
+        <br> <br>
+        <input style="border-color: #5A5A5A; position: relative; left: 20px;" type="password" ng-model="myInput" placeholder="Password" required class="email-input"> <br>
+       <a style="position: relative; left: 20px;" href="" title="Forgot your password">Forgot your password?</a>
+        <br>
+          <button style="width: 70%; height: 40%; border-color: #5A5A5A; position: relative; left: 20px;"><a href="homepage.html"></a></button>
+           <br>
+        
+        <a style="position: relative; left: 20px;" href="" title="Forgot your password">Dont have an account? Sign up</a>
+
+      </form>
+    </div>
+  </div>
+  <app-root></app-root>
+</body>
+</html>
